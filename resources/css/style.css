@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 18px sans-serif;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.box {
+    width: 600px;
+    height: 500px;
+    margin: 10% auto;
+    background-color: #fff;
+    padding: 10px 50px 50px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 1px #cbcbcbcb;
+}
+
+.box .content h1 {
+    background-color: #57636e;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    padding: 3px 0;
+    border-radius: 25px;
+}
+
+.box .content .questions {
+    padding: 25px;
+    font-size: 25px;
+    color: #57636e;
+    border-bottom: 1px solid #57636e;
+}
+
+.box .content .buttons {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+    height: 50px;
+    padding: 5px 10px;
+    width: 95%;
+    color: #fff;
+    border: 1px solid #d5d5d5;
+    border-radius: 25px;
+    outline: none;
+    background-color: #57636e;
+}
+
+.box .content footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.box .content footer .progress {
+    border-top: 1px solid #57636e;
+    padding: 10px 0;
+    color: #2b2b2b;
+    font-size: 15px;
+}
