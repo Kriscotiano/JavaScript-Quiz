@@ -33,7 +33,7 @@ Quiz.prototype.guess = function(answer) {
 //Add Question and Choices
 function populate() {
     if(quiz.quizEnd()) {
-        //showScores();
+        showScores();
     } else {
         //show question
         let element = document.getElementById('question');
@@ -43,8 +43,32 @@ function populate() {
         for(let i = 0; i < choices.length; i++) {
             let element = document.getElementById('btn' + i);
             element.textContent = choices[i];
+            guess('btn' + i, choices[i]);
         }
+
+        showProgress();
     }
+};
+
+function guess(id, guess) {
+    let button = document.getElementById(id);
+    button.onclick = function() {
+        quiz.guess(guess);
+        populate();
+    }
+};
+
+function showScores() {
+    let gameOverHtml = "<h1>Result</h1>";
+    gameOverHtml += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
+    let element = document.getElementById('quiz');
+    element.textContent = gameOverHtml;
+};
+
+function showProgress() {
+    let currentQuestionNum = quiz.questionIndex + 1;
+    let element = document.querySelector('.progress');
+    element.innerHTML = "Question " + currentQuestionNum + " of " + quiz.questions.length;
 }
 
 //Questions
