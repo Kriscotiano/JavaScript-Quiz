@@ -27,6 +27,7 @@ body {
     padding: 3px 0;
     border-radius: 25px;
     border: 1px solid #2b2b2b;
+    font-weight: bold;
 }
 
 .box h2 {
@@ -37,6 +38,7 @@ body {
     color: #2b2b2b;
     font-size: 30px;
     text-align: center;
+    font-weight: bold;
 }
 
 .box .content h1 {

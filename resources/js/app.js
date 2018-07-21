@@ -79,10 +79,17 @@ function showScores() {
 let questions = [
     new Question('Which of the following is NOT a primitive type in JavaScript?', ['Boolean', 'Undefined', 'Object', 'String'], 'Object'),
     new Question('What will 3 > 2 > 1 return?', ['3', 'True', 'Undefined', 'False'], 'False'),
-    new Question('What is the result? Number("1") - 1 == 0;', ['True', 'False', 'TypeError', 'Null'], 'True')
+    new Question('What is the result? Number("1") - 1 == 0;', ['True', 'False', 'TypeError', 'Null'], 'True'),
+    new Question('What is the function of the Array object that adds and/or removes elements from an array?', ['splice()', 'slice()', 'unshift()', 'filter()'], 'splice()'),
+    new Question('Which of the following function of Array object adds one or more elements to the end of an array and returns the new length of the array?', ['pop()', 'join()', 'push()', 'shift()'], 'push()'),
+    new Question('When does the keyword "this" reference anything in the code?', ['As soon as it\'s written', 'When an event listener is added', 'When the browser is loaded', 'When the function/method containing it is invoked'], 'When the function/method containing it is invoked')
 ];
 
 let quiz = new Quiz(questions);
 
 
 populate();
+
+
+
+
