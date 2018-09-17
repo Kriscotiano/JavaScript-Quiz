@@ -88,7 +88,7 @@ let questions = [
     new Question('When does the keyword "this" reference anything in the code?', ['As soon as it\'s written', 'When an event listener is added', 'When the browser is loaded', 'When the function/method containing it is invoked'], 'When the function/method containing it is invoked'),
     new Question('Which of these is a feature of AJAX?', ['Send and retreive server data asynchronously', 'Live form validations', 'Change content without reloading the page', 'All of the above'], 'All of the above'),
     new Question('Every object is linked to a _______ object from which it can inherit properties.', ['Prototype', 'Parameter', 'Class', 'Constructor'], 'Prototype'),
-    new Question('Where do you use the “break” statement?', ['To divide a mathematical value', 'To terminate an object statement', 'To terminate a switch statement, loop or block', 'To divide an array at a specified index'], 'To terminate a switch statement, loop or labeled block'),
+    new Question('Where do you use the “break” statement?', ['To divide a mathematical value', 'To terminate an object statement', 'To terminate a switch statement, loop or block', 'To divide an array at a specified index'], 'To terminate a switch statement, loop or block'),
     new Question('Immutability, avoidance of shared state & side effects are all examples of _______.', ['Functional Programming', 'Const', 'Object Methods', 'All of the above'], 'Functional Programming')
 ];
 let quiz = new Quiz(questions);
